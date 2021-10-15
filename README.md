@@ -62,6 +62,8 @@ See full IDA disassembly at [ida_disasm_full.asm](ida_disasm_full.asm)
 
 ![image](https://user-images.githubusercontent.com/37926134/137428932-20b608cf-20e1-49e6-a965-835a5b99c23c.png)
 
+No potential abusable section.
+
 # IOCTL
 
 ### DEVICE
