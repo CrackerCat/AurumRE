@@ -29,7 +29,7 @@ Driver object (ffffc38f2664d6c0) is for:
  \Driver\Aurum
 ```
 
-The device can be opened without any privileges.
+The device can be opened without any privileges.  
 Invalid IOCTL requests will resuled in getting last error code `0xE0000001`.
 
 ```cpp
@@ -92,4 +92,34 @@ Device Object stacks:
 > ffffc38f27034e10  \Driver\Aurum      00000000  Aurum
 
 Processed 1 device objects.
+```
+
+### DeviceIoControl Handler
+
+Now we know that the dispatch routine is at offset `0x14450`.
+
+```asm
+2: kd> u Aurum+0x14450
+Aurum+0x14450:
+fffff800`74864450 e960deffff      jmp     Aurum+0x122b5 (fffff800`748622b5) ; jmp
+fffff800`74864455 3da7bc1300      cmp     eax,13BCA7h
+fffff800`7486445a 0f84f7a20000    je      Aurum+0x1e757 (fffff800`7486e757)
+fffff800`74864460 e9ffd00200      jmp     Aurum+0x41564 (fffff800`74891564)
+fffff800`74864465 4d0fafc1        imul    r8,r9
+fffff800`74864469 498bc0          mov     rax,r8
+fffff800`7486446c 48c1e820        shr     rax,20h
+fffff800`74864470 493bc3          cmp     rax,r11
+```
+
+```asm
+2: kd> u Aurum+0x122b5
+Aurum+0x122b5:
+fffff800`748622b5 48895c2408      mov     qword ptr [rsp+8],rbx
+fffff800`748622ba 4889742418      mov     qword ptr [rsp+18h],rsi
+fffff800`748622bf 57              push    rdi
+fffff800`748622c0 4154            push    r12
+fffff800`748622c2 4155            push    r13
+fffff800`748622c4 4156            push    r14
+fffff800`748622c6 4157            push    r15
+fffff800`748622c8 4881ec60020000  sub     rsp,260h
 ```
