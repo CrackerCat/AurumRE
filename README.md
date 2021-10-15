@@ -1,7 +1,25 @@
 # AurumRE
 Reverse engineering of Aurum anti-cheat driver
 
-# Dispatch Routines
+# NOTES
+
+- No anti kernel debugger
+
+# IOCTL
+
+### DEVICE
+
+The WIN32 device name is `\\\\.\\Aurum`.
+
+```
+2: kd> !drvobj Aurum
+Driver object (ffffc38f2664d6c0) is for:
+ \Driver\Aurum
+```
+
+The device can be opened without any privileges.
+
+### DISPATCH ROUTINES
 
 ```
 2: kd> !drvobj Aurum 7
