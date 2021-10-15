@@ -31,6 +31,11 @@ Driver object (ffffc38f2664d6c0) is for:
 
 The device can be opened without any privileges.
 
+```cpp
+hDevice = CreateFileW(L"\\\\.\\Aurum", ...);
+DeviceIoControl(hDevice, 0x555); // GetLastError:0xE0000001
+```
+
 ### DISPATCH ROUTINES
 
 ```
