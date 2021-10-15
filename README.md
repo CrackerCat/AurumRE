@@ -60,7 +60,7 @@ See full IDA disassembly at [ida_disasm_full.asm](ida_disasm_full.asm)
 .text  IMAGE_SCN_CNT_CODE | IMAGE_SCN_MEM_EXECUTE | IMAGE_SCN_MEM_READ
 ```
 
-![image](https://user-images.githubusercontent.com/37926134/137428874-4fab5e0b-ed25-4dc5-a1b3-a12a64e9b5a3.png)
+![image](https://user-images.githubusercontent.com/37926134/137428932-20b608cf-20e1-49e6-a965-835a5b99c23c.png)
 
 # IOCTL
 
