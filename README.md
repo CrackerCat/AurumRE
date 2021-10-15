@@ -15,6 +15,8 @@ SHA1: 7F5573763DFF163D8B0F0906A671ED9F2D9CA703
 BLAKE2sp: 63CF22AA2C704CF32C674318B92F2315AE424A622971F55879EF8FE5FC776B8F
 ```
 
+See full IDA disassembly at [ida_disasm_full.asm](ida_disasm_full.asm)
+
 - No anti kernel debugger
 
 # IOCTL
