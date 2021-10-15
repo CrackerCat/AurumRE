@@ -3,7 +3,7 @@ Reverse engineering of Aurum anti-cheat driver
 
 # Dispatch Routines
 
-```cpp
+```
 2: kd> !drvobj Aurum 7
 Driver object (ffffc38f2664d6c0) is for:
  \Driver\Aurum
