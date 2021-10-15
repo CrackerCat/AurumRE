@@ -15,6 +15,33 @@ SHA1: 7F5573763DFF163D8B0F0906A671ED9F2D9CA703
 BLAKE2sp: 63CF22AA2C704CF32C674318B92F2315AE424A622971F55879EF8FE5FC776B8F
 ```
 
+```
+# of Bytes: 258184
+# of Memory Blocks: 10
+# of Instructions: 0
+# of Defined Data: 1227
+# of Functions: 0
+# of Symbols: 33
+# of Data Types: 54
+# of Data Type Categories: 4
+
+Comments: Aurum Driver
+CompanyName: Activision Blizzard, Inc.
+Compiler: visualstudio:unknown
+
+Created With Ghidra Version: 10.0.1
+Executable Format: Portable Executable (PE)
+
+ProductName: Aurum Driver
+ProductVersion: V1.0.0.0
+Relocatable: true
+PDB Age: 1
+PDB File: Aurum.pdb
+PDB GUID: 7db1926f-b5eb-40da-9f5e-47207d60bfca
+PDB Version: RSDS
+Section Alignment: 4096
+```
+
 See full IDA disassembly at [ida_disasm_full.asm](ida_disasm_full.asm)
 
 - No anti kernel debugger
