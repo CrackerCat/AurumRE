@@ -30,6 +30,7 @@ Driver object (ffffc38f2664d6c0) is for:
 ```
 
 The device can be opened without any privileges.
+Invalid IOCTL requests will resuled in getting last error code `0xE0000001`.
 
 ```cpp
 hDevice = CreateFileW(L"\\\\.\\Aurum", ...);
