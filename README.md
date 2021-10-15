@@ -123,3 +123,5 @@ fffff800`748622c4 4156            push    r14
 fffff800`748622c6 4157            push    r15
 fffff800`748622c8 4881ec60020000  sub     rsp,260h
 ```
+
+See full disassembly at [asm_Aurum%2B0x122b5.asm](asm_Aurum%2B0x122b5.asm)
